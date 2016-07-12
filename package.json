@@ -23,7 +23,18 @@
     "babel-preset-react": "^6.11.1",
     "babel-preset-stage-0": "^6.5.0",
     "babel-register": "^6.9.0",
+    "bluebird": "^3.4.1",
+    "body-parser": "^1.15.2",
+    "cookie-parser": "^1.4.3",
+    "cors": "^2.7.1",
+    "debug": "^2.2.0",
     "express": "^4.14.0",
+    "express-validator": "^2.20.8",
+    "http-status": "^0.2.3",
+    "joi": "^9.0.0",
+    "lodash": "^4.13.1",
+    "mongoose": "^4.5.4",
+    "morgan": "^1.7.0",
     "react": "^15.2.0",
     "react-dom": "^15.2.0",
     "webpack": "^1.13.1"
@@ -31,7 +42,6 @@
   "devDependencies": {
     "concurrently": "^2.1.0",
     "autoprefixer-loader": "^3.2.0",
-    "concurrently": "^2.1.0",
     "css-loader": "^0.23.1",
     "file-loader": "^0.9.0",
     "image-loader": "0.0.1",
@@ -41,6 +51,6 @@
     "sass-loader": "^4.0.0",
     "source-map-loader": "^0.1.5",
     "style-loader": "^0.13.1",
-    "url-loader": "^0.5.7"    
+    "url-loader": "^0.5.7"
   }
 }

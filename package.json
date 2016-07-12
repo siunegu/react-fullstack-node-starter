@@ -1,11 +1,11 @@
 {
   "name": "react-fullstack-node-starter",
   "version": "1.0.0",
-  "description": "An up and running backend and front end with react and node",
+  "description": "A simple up and running backend and front end with react and node",
   "main": "server.js",
   "scripts": {
     "webpack-watch": "webpack -w",
-    "express-server": "node ./server",
+    "express-server": "node ./server/server",
     "dev": "concurrently --kill-others \"npm run webpack-watch\" \"npm run express-server\""
   },
   "repository": {

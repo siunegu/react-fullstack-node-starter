@@ -20,13 +20,14 @@ function get(req, res) {
 
 /**
  * Create new user
- * @property {string} req.body.username - The username of user.
+ * @property {string} req.body.firstName - The firstName of user.
  * @property {string} req.body.email - The email of user.
  * @returns {User}
  */
 function create(req, res, next) {
 	const user = new User({
-		username: req.body.username,
+		firstName: req.body.firstName,
+		lastName: req.body.lastName,
 		email: req.body.email
 	});
 
@@ -37,13 +38,15 @@ function create(req, res, next) {
 
 /**
  * Update existing user
- * @property {string} req.body.username - The username of user.
+ * @property {string} req.body.firstname - The firstname of user.
+ * @property {string} req.body.lastName - The lastName of user.
  * @property {string} req.body.email - The email of user.
  * @returns {User}
  */
 function update(req, res, next) {
 	const user = req.user;
-	user.username = req.body.username;
+	user.firstName = req.body.firstName;
+	user.lastName = req.body.lastName;
 	user.email = req.body.email;
 
 	user.saveAsync()

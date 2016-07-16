@@ -1,5 +1,5 @@
 export default {
 	env: 'production',
-	db: process.env.MONGOHQ_URL || process.env.MONGOLAB_URI,
+	db: process.env.MONGODB_URI,
 	port: process.env.PORT
 };

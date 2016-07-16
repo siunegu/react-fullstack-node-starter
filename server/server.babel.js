@@ -30,9 +30,9 @@ const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-/* serve /public folder as / path */
+/* serve '/public' folder as '/' path */
 app.use('/', express.static('public'));
-/* mount all routes on /api path */
+/* mount all routes on '/api' path */
 app.use('/api/', routes);
 /* listen on port 3000 or production port */
 app.listen(config.port, () => {

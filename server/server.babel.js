@@ -30,10 +30,19 @@ const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
+app.use(cookieParser());
+
+// disable 'X-Powered-By' header in response
+app.disable('x-powered-by');
+
+// enable CORS - Cross Origin Resource Sharing
+app.use(cors(config.corsOptions));
+
 /* serve '/public' folder as '/' path */
 app.use('/', express.static('public'));
 /* mount all routes on '/api' path */
 app.use('/api/', routes);
+/* allow  */
 /* listen on port 3000 or production port */
 app.listen(config.port, () => {
 	console.log(`server started on port ${config.port}  (${config.env})`);

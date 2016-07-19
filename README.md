@@ -4,7 +4,7 @@ Description:
 ------------
 A simple up and running backend and front end with react and node.
 
-To begin:
+To start:
 ---------
 1. Install dependencies.
 `npm install`

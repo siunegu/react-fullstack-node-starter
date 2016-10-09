@@ -11,7 +11,7 @@ class UserList extends React.Component {
     }
     loadUsersFromServer() {
     	$.ajax({
-    		url: 'http://localhost:3000/api/users',
+    		url: '/api/users',
     		dataType: 'json',
     		cache: false
     	})

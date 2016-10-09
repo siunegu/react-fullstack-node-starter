@@ -19,7 +19,7 @@ class UserForm extends React.Component {
     }
     postUserToServer(payload) {
     	$.ajax({
-    		url: 'http://localhost:3000/api/users',
+    		url: '/api/users',
             method: 'post',
             data: payload,
     		dataType: 'json',

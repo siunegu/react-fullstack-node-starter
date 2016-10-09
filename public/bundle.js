@@ -28572,7 +28572,7 @@
 	                    var _this2 = this;
 
 	                    _jquery2.default.ajax({
-	                        url: 'http://localhost:3000/api/users',
+	                        url: '/api/users',
 	                        dataType: 'json',
 	                        cache: false
 	                    }).done(function (data) {
@@ -39378,7 +39378,7 @@
 	                key: 'postUserToServer',
 	                value: function postUserToServer(payload) {
 	                    _jquery2.default.ajax({
-	                        url: 'http://localhost:3000/api/users',
+	                        url: '/api/users',
 	                        method: 'post',
 	                        data: payload,
 	                        dataType: 'json',

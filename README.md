@@ -9,7 +9,10 @@ To start:
 1. Install dependencies.
 `npm install`
 2. Start the server.
+*For production*
 `npm start`
+*For development*
+`npm run start-dev`
 
 Deploying to Heroku:
 --------------------

@@ -13,14 +13,14 @@ class UserList extends React.Component {
     	$.ajax({
     		url: 'http://localhost:3000/api/users',
     		dataType: 'json',
-    		cache: false,
-    		success: (data) => {
-    			console.log(data)
-    			this.setState({
-    				data: data
-    			})
-    		}
+    		cache: false
     	})
+        .done((data) => {
+            console.log(data)
+            this.setState({
+                data: data
+            })            
+        })
     }
     componentDidMount() {
     	this.loadUsersFromServer()

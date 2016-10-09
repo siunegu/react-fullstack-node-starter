@@ -11,7 +11,7 @@ import httpStatus from 'http-status';
  		type: String,
  		required: true
  	},
- 	lastname: {
+ 	lastName: {
  		type: String,
  		required: true
  	},

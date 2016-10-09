@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import UserList from './userlist'
+import UserForm from './userform'
 
 class Home extends React.Component {
   constructor() {
@@ -12,6 +13,9 @@ class Home extends React.Component {
         <h2>
           This is a Home.
         </h2>
+        <div> 
+          <UserForm/>
+        </div> 
         <div>
           <UserList/>
         </div>
